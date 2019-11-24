@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/slajdsou.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+    <script>
+        window.onload = function () {
+            alert("IZVOLTE U SALONU!");
+
+        };
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menuOpener").click(function () {
+                if ($(".navbar-menu").hasClass("active")) {
+                    $(".navbar-menu").removeClass("active");
+                } else {
+                    $(".navbar-menu").addClass("active");
+                }
+
+            });
+        });
+    </script>
+
+    <title>MIA baloni</title>
+</head>
+
+<body class="index">
+
+    <div class="page-content-wrapper">
+
+        <div class="navbar" id="index-nav">
+            <div id="logo-navbar">
+                <a href="E:\Faks\Treća (JOVAN)\EPOS\Drugi domaći\index.html"> <img src="images/beli.png" width="130"
+                        height="95"> </a>
+            </div>
+            <div>
+                <ul id="list-navbar">
+                    <li><a href="index.html">POČETNA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                    <li><a href="katalog.html">KATALOG</a></li>
+                    <li><a href="o_nama.html">O NAMA</a></li>
+                    <span id="menuOpener"><i class="fa fa-bars"></i></span>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="mobile-nav">
+            <nav class="navbar-menu">
+
+                <ul class="menu-listing">
+                    <li><a href="index.html">POČETNA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                    <li><a href="katalog.html">KATALOG</a></li>
+                    <li><a href="o_nama.html">O NAMA</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="telo">
+            <div id="Galerija">
+                <div class="slajd">
+                    <div class="broj_slajda" id="baloni"></div>
+                    <img src="images/flowers.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="images/wedding.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="images/decor.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="images/slatko.jpg">
+                </div>
+
+                <!-- Dugmici za sledecu i prethodnu sliku -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Kruzici -->
+                <div class="tacke" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
